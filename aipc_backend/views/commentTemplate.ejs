@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+            font-size: 12px;
+            color: #777777;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Notification</h1>
+        </div>
+        <div class="content">
+            <p>We wanted to inform you about ZOM-<%= assignmentId %>:</p>
+            <ul>
+                <%- content %>
+                
+                <!-- <li>User <strong>[UserB]</strong> updated the status of the assignment to <strong>Completed</strong>.</li> -->
+            </ul>
+            <p>You can view the details by logging into your account.</p>
+            <a href="https://admin.zomak.in" class="btn" style="background-color: #3C455E; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;">Go to Dashboard</a>
+            <p>Thank you for using our service.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Zomak. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

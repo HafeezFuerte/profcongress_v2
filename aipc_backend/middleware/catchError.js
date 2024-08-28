@@ -1,0 +1,1 @@
+module.exports = error => { return (req, res, next) => { error(req, res, next).catch((error) => next(error)) } }
